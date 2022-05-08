@@ -1,0 +1,274 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "lafei_4.moc3",
+    "Textures": [
+      "textures/texture_00.png"
+    ],
+    "Physics": "lafei_4.physics3.json",
+    "Motions": {
+      "Idle": [
+        {
+          "Name": "idle_no_voice",
+          "File": "motions/idle.motion3.json",
+          "Weight": 180
+        },
+        {
+          "File": "motions/mail.motion3.json",
+          "Sound": "cue/mail.wav",
+          "Text": "指挥官，您的信······",
+          "Duration": 5000,
+          "Weight": 1
+        },
+        {
+          "File": "motions/main_1.motion3.json",
+          "Sound": "cue/main_1_3.wav",
+          "Text": "春节限定版兔耳和兔兔拖鞋···指挥官喜欢吗？拉菲···很喜欢···",
+          "Duration": 9000,
+          "Weight": 3
+        },
+        {
+          "File": "motions/main_2.motion3.json",
+          "Sound": "cue/main_2_3.wav",
+          "Text": "z23，好像对春节的传说很有兴趣的样子······",
+          "Duration": 5000,
+          "Weight": 3
+        },
+        {
+          "File": "motions/main_3.motion3.json",
+          "Sound": "cue/main_3_3.wav",
+          "Text": "像这样在树上坐着，拉菲感觉自己也要开花了······",
+          "Duration": 9000,
+          "Weight": 3
+        },
+        {
+          "File": "motions/idle.motion3.json",
+          "Sound": "cue/feeling1.wav",
+          "Weight": 10
+        }
+      ],
+      "Start": [
+        {
+          "File": "motions/login.motion3.json",
+          "Sound": "cue/login_3.wav",
+          "Text": "指挥官还不回来，拉菲要靠着树睡着了······   Zzz······",
+          "Duration": 12000,
+          "Weight": 1
+        },
+        {
+          "File": "motions/login.motion3.json",
+          "Sound": "cue/home_3.wav",
+          "Text": "那个红红的，一串一串，烧起来之后砰砰砰砰的······唔，有点吵······",
+          "Duration": 13000,
+          "Weight": 1
+        }
+      ],
+      "TapTouchHead": [
+        {
+          "File": "motions/touch_head.motion3.json",
+          "Sound": "cue/touch_head.wav",
+          "Text": "呣······指挥官，不要摇我······",
+          "Duration": 5000,
+          "Weight": 1
+        }
+      ],
+      "TapTouchBody": [
+        {
+          "File": "motions/touch_body.motion3.json",
+          "Sound": "cue/touch_1_3.wav",
+          "Text": "拉菲没有想借指挥官的肩膀靠一会儿，嗯，并没有······",
+          "Duration": 7000,
+          "Weight": 1
+        }
+      ],
+      "TapTouchSpecial": [
+        {
+          "File": "motions/touch_special.motion3.json",
+          "Sound": "cue/touch_2.wav",
+          "Text": "指挥官······莫非是hentai？！",
+          "Duration": 5000,
+          "Weight": 1
+        },
+        {
+          "File": "motions/touch_special.motion3.json",
+          "Sound": "cue/touch_2_2.wav",
+          "Text": "指挥官，hentai······",
+          "Duration": 5000,
+          "Weight": 1
+        },
+        {
+          "File": "motions/touch_special.motion3.json",
+          "Sound": "cue/touch_2_3.wav",
+          "Text": "指挥官，又在想奇怪的事了吗···",
+          "Duration": 5000,
+          "Weight": 1
+        }
+      ],
+      "Tapshu": [
+        {
+          "File": "motions/main_1.motion3.json",
+          "Sound": "cue/main_1_3.wav",
+          "Text": "春节限定版兔耳和兔兔拖鞋···指挥官喜欢吗？拉菲···很喜欢···",
+          "Duration": 9000,
+          "Weight": 1
+        },
+        {
+          "File": "motions/main_2.motion3.json",
+          "Sound": "cue/main_2_3.wav",
+          "Text": "z23，好像对春节的传说很有兴趣的样子······",
+          "Duration": 5000,
+          "Weight": 1
+        },
+        {
+          "File": "motions/main_3.motion3.json",
+          "Sound": "cue/main_3_3.wav",
+          "Text": "像这样在树上坐着，拉菲感觉自己也要开花了······",
+          "Duration": 9000,
+          "Weight": 1
+        }
+      ],
+      "Switch": [
+        {
+          "Name": "Settings_All_voice_On",
+          "Command": "change_cos Settings_All_voice_On.model3.json",
+          "Weight": 1
+        },
+        {
+          "Name": "Settings_All_voice_Off",
+          "Command": "change_cos Settings_All_voice_Off.model3.json",
+          "Weight": 1
+        },
+        {
+          "Name": "Settings_Idle_voice_On",
+          "Command": "change_cos Settings_Idle_voice_On.model3.json",
+          "Weight": 1
+        },
+        {
+          "Name": "Settings_Idle_voice_Off",
+          "Command": "change_cos Settings_Idle_voice_Off.model3.json",
+          "Weight": 1
+        }
+      ],
+      "Voice Setting": [
+        {
+          "Name": "Voice Setting",
+          "Text": "Voice Setting",
+          "Choices": [
+            {
+              "Text": "All Voice Setting",
+              "NextMtn": "Voice Setting:All Voice Setting"
+            },
+            {
+              "Text": "Idle Voice Setting",
+              "NextMtn": "Voice Setting:Idle Voice Setting"
+            },
+            {
+              "Text": "Cancel"
+            }
+          ],
+          "Weight": 1
+        },
+        {
+          "Name": "All Voice Setting",
+          "Text": "All Voice Setting",
+          "Choices": [
+            {
+              "Text": "ON",
+              "NextMtn": "Switch:Settings_All_voice_On"
+            },
+            {
+              "Text": "OFF",
+              "NextMtn": "Switch:Settings_All_voice_Off"
+            },
+            {
+              "Text": "CANCEL"
+            }
+          ],
+          "Weight": 1
+        },
+        {
+          "Name": "Idle Voice Setting",
+          "Text": "Idle Voice Setting",
+          "Choices": [
+            {
+              "Text": "ON",
+              "NextMtn": "Switch:Settings_Idle_voice_On"
+            },
+            {
+              "Text": "OFF",
+              "NextMtn": "Switch:Settings_Idle_voice_Off"
+            },
+            {
+              "Text": "CANCEL"
+            }
+          ],
+          "Weight": 1
+        }
+      ],
+      "Settings": [
+        {
+          "Name": "Settings",
+          "Text": "Settings",
+          "Choices": [
+            {
+              "Text": "Voice Setting",
+              "NextMtn": "Voice Setting:Voice Setting"
+            },
+            {
+              "Text": "Cancel"
+            }
+          ],
+          "Weight": 1
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    }
+  ],
+  "HitAreas": [
+    {
+      "Name": "TouchHead",
+      "Id": "TouchHead",
+      "Order": 1,
+      "Motion": "TapTouchHead"
+    },
+    {
+      "Name": "TouchBody",
+      "Id": "TouchBody",
+      "Order": 1,
+      "Motion": "TapTouchBody"
+    },
+    {
+      "Name": "TouchSpecial",
+      "Id": "TouchSpecial",
+      "Order": 2,
+      "Motion": "TapTouchSpecial"
+    },
+    {
+      "Name": "shu",
+      "Id": "shu",
+      "Motion": "Tapshu"
+    },
+    {
+      "Name": "paozuo",
+      "Id": "paozuo",
+      "Order": 1,
+      "Motion": "Settings"
+    }
+  ]
+}

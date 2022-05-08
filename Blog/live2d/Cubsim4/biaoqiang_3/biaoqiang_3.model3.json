@@ -1,0 +1,160 @@
+{
+  "Version": 3,
+  "ScaleFactor": 0.5,
+  "FileReferences": {
+    "Moc": "biaoqiang_3.moc3",
+    "Textures": [
+      "textures/texture_00.png"
+    ],
+    "Physics": "biaoqiang_3.physics3.json",
+    "Motions": {
+      "TouchBody": [
+        {
+          "File": "motions/touch_body.motion3.json",
+          "Weight": 1
+        }
+      ],
+      "TouchSpecial": [
+        {
+          "File": "motions/touch_special.motion3.json",
+          "Weight": 1
+        }
+      ],
+      "TouchHead": [
+        {
+          "File": "motions/touch_head.motion3.json",
+          "Weight": 1
+        },
+        {
+          "File": "motions/home.motion3.json",
+          "Weight": 3
+        },
+        {
+          "File": "motions/mail.motion3.json",
+          "Weight": 3
+        },
+        {
+          "File": "motions/mission.motion3.json",
+          "Weight": 3
+        },
+        {
+          "File": "motions/mission_complete.motion3.json",
+          "Weight": 3
+        },
+        {
+          "File": "motions/complete.motion3.json",
+          "Weight": 2
+        }
+      ],
+      "skirt": [
+        {
+          "File": "motions/wedding.motion3.json",
+          "Weight": 1
+        },
+        {
+          "File": "motions/idle.motion3.json",
+          "Weight": 3
+        }
+      ],
+      "jiao": [
+        {
+          "File": "motions/login.motion3.json",
+          "Weight": 1
+        }
+      ],
+      "Tui": [
+        {
+          "File": "motions/main_2.motion3.json",
+          "Weight": 3
+        },
+        {
+          "File": "motions/main_3.motion3.json",
+          "Weight": 1
+        }
+      ],
+      "PaoTai": [
+        {
+          "File": "motions/main_1.motion3.json",
+          "Weight": 1
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    }
+  ],
+  "HitAreas": [
+    {
+      "Name": "TouchHead",
+      "Id": "TouchHead",
+      "Motion": "TouchHead"
+    },
+    {
+      "Name": "TouchBody",
+      "Id": "TouchBody",
+      "Motion": "TouchBody"
+    },
+    {
+      "Name": "TouchSpecial",
+      "Id": "TouchSpecial",
+      "Order": 1,
+      "Motion": "TouchSpecial"
+    },
+    {
+      "Name": "ZuoTui",
+      "Id": "zuotui4",
+      "Order": 1,
+      "Motion": "Tui"
+    },
+    {
+      "Name": "YouTui",
+      "Id": "youtui4",
+      "Order": 1,
+      "Motion": "Tui"
+    },
+    {
+      "Name": "ZuoJiao",
+      "Id": "newzu",
+      "Order": 2,
+      "Motion": "jiao"
+    },
+    {
+      "Name": "YouJiao",
+      "Id": "newzu2",
+      "Order": 2,
+      "Motion": "jiao"
+    },
+    {
+      "Name": "PaoTai",
+      "Id": "paotai",
+      "Motion": "PaoTai"
+    },
+    {
+      "Name": "PangCiL",
+      "Id": "Lqunzou",
+      "Order": 2,
+      "Motion": "skirt"
+    },
+    {
+      "Name": "PangCiR",
+      "Id": "Rqunzou",
+      "Order": 2,
+      "Motion": "skirt"
+    }
+  ],
+  "LipSync": true
+}
