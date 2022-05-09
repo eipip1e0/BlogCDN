@@ -1,0 +1,121 @@
+{
+  "type": 0,
+  "model": "model.moc",
+  "textures": [
+    "model.1024/texture_00.png"
+  ],
+  "controllers": {
+    "param_hit": {},
+    "param_loop": {},
+    "key_trigger": {},
+    "param_trigger": {},
+    "area_trigger": {},
+    "hand_trigger": {},
+    "eye_blink": {
+      "min_interval": 500,
+      "max_interval": 6000,
+      "enabled": true
+    },
+    "lip_sync": {
+      "gain": 5.0
+    },
+    "mouse_tracking": {
+      "smooth_time": 0.15,
+      "enabled": true
+    },
+    "auto_breath": {
+      "enabled": true
+    },
+    "extra_motion": {
+      "enabled": true
+    },
+    "accelerometer": {
+      "enabled": true
+    },
+    "microphone": {},
+    "transform": {},
+    "face_tracking": {
+      "enabled": true
+    },
+    "hand_tracking": {},
+    "param_value": {},
+    "part_opacity": {},
+    "artmesh_opacity": {},
+    "artmesh_color": {},
+    "artmesh_culling": {
+      "default_mode": 0
+    },
+    "intimacy_system": {}
+  },
+  "hit_areas": [
+    {
+      "name": "head",
+      "id": "D_PSD.57",
+      "order": 2,
+      "motion": "tap_head"
+    },
+    {
+      "name": "body",
+      "id": "D_PSD.07",
+      "order": 1,
+      "motion": "tap_body"
+    },
+    {
+      "name": "special",
+      "id": "D_PSD.00",
+      "order": 1,
+      "motion": "tap_special"
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/daiji.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      },
+      {
+        "file": "motions/suiji.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      },
+      {
+        "file": "motions/suiji_h.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap_head": [
+      {
+        "file": "motions/dianji3.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap_body": [
+      {
+        "file": "motions/dianji1.mtn",
+        "sound": "sound/mglt01.mp3",
+        "fade_in": 0,
+        "fade_out": 0
+      },
+      {
+        "file": "motions/dianji2.mtn",
+        "sound": "sound/mglt02.mp3",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap_special": [
+      {
+        "file": "motions/dianji1_h.mtn",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ]
+  },
+  "physics_v2": {},
+  "options": {
+    "name": "magelite"
+  }
+}

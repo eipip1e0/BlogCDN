@@ -258,17 +258,6 @@
       "Id": "TouchSpecial",
       "Order": 2,
       "Motion": "TapTouchSpecial"
-    },
-    {
-      "Name": "shu",
-      "Id": "shu",
-      "Motion": "Tapshu"
-    },
-    {
-      "Name": "paozuo",
-      "Id": "paozuo",
-      "Order": 1,
-      "Motion": "Settings"
     }
   ]
 }
